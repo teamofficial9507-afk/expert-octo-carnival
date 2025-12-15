@@ -1,0 +1,14 @@
+-- vehicle_runs.sql
+CREATE TABLE IF NOT EXISTS vehicle_runs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  run_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  vehicle_netid VARCHAR(64),
+  destroyed_by VARCHAR(64),
+  reward_amount INT
+);
+
+CREATE TABLE IF NOT EXISTS leaderboard (
+  citizenid VARCHAR(64) PRIMARY KEY,
+  gold_bars INT DEFAULT 0,
+  kills INT DEFAULT 0
+);

@@ -1,0 +1,30 @@
+:root{
+  --bg:#0f1720;
+  --panel:#0b1220;
+  --accent:#f59e0b;
+  --muted:#9aa6b2;
+  --card:#0b1622;
+  --glass: rgba(255,255,255,0.03);
+}
+
+*{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif}
+html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#07101a);color:#e6eef6}
+.hidden{display:none}
+#app{height:100%;display:flex;align-items:center;justify-content:center;padding:24px}
+.panel{width:520px;background:linear-gradient(180deg,var(--panel),var(--card));border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.6);overflow:hidden;border:1px solid rgba(255,255,255,0.03)}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid rgba(255,255,255,0.03)}
+header h1{margin:0;font-size:18px;letter-spacing:0.2px}
+.btn{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted);padding:6px 10px;border-radius:8px;cursor:pointer}
+main{padding:16px}
+table{width:100%;border-collapse:collapse;color:#dbeafe}
+thead th{font-size:12px;text-align:left;padding:8px 6px;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px}
+tbody td{padding:10px 6px;border-top:1px solid rgba(255,255,255,0.02)}
+tbody tr:nth-child(odd){background:rgba(255,255,255,0.01)}
+.rank{width:40px;color:var(--accent);font-weight:600}
+.player{max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.empty{padding:18px;text-align:center;color:var(--muted);display:none}
+footer{padding:12px 16px;border-top:1px solid rgba(255,255,255,0.03);font-size:12px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+@media (max-width:560px){
+  .panel{width:92%}
+  header h1{font-size:16px}
+}

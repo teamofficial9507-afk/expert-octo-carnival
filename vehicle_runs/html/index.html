@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VehRaid Leaderboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app" class="hidden">
+    <div class="panel">
+      <header>
+        <h1>Top Raiders</h1>
+        <button id="closeBtn" class="btn">Close</button>
+      </header>
+
+      <main>
+        <table id="leaderboard">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Player</th>
+              <th>Gold Bars</th>
+              <th>Kills</th>
+            </tr>
+          </thead>
+          <tbody id="rows">
+            <!-- rows injected by client.js -->
+          </tbody>
+        </table>
+
+        <div id="empty" class="empty">No data available</div>
+      </main>
+
+      <footer>
+        <small>Press F7 to refresh</small>
+      </footer>
+    </div>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+</html>
