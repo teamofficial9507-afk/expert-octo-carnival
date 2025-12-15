@@ -1,4 +1,4 @@
--- vehicle_runs.sql
+
 CREATE TABLE IF NOT EXISTS vehicle_runs (
   id INT AUTO_INCREMENT PRIMARY KEY,
   run_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
