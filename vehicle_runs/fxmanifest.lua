@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'YourName'
+author 'Gamegalactic'
 description 'vehicle_runs baseline'
 version '1.0.0'
 
